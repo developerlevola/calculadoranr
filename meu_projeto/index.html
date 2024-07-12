@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Validade</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Validade de Produtos</h1>
+        <div id="menu">
+            <button onclick="mostrarCalculadora('validade')">Calculadora de Validade</button>
+            <button onclick="mostrarCalculadora('etiqueta')">Calculadora de Etiqueta de Palete</button>
+        </div>
+        <div id="calculadora-validade" class="calculadora">
+            <h2>Calculadora de Validade</h2>
+            <label for="produto">Nome do Produto:</label>
+            <select id="produto">
+                <option value="">Selecione um produto</option>
+            </select>
+            <label for="data-fabricacao">Data de Fabricação (dd/mm/aaaa):</label>
+            <input type="text" id="data-fabricacao">
+            <button onclick="calcularValidade()">Calcular Validade</button>
+            <p id="resultado-validade"></p>
+        </div>
+        <div id="calculadora-etiqueta" class="calculadora">
+            <h2>Calculadora de Etiqueta de Palete</h2>
+            <p>A calculadora de etiqueta de palete não está implementada ainda.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
